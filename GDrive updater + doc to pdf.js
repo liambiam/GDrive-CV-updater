@@ -4,7 +4,7 @@ function docToPDF() {
 
 
   // ID of Google Doc
-  var files = DriveApp.getFilesByName('old cv to be deleted');
+  var files = DriveApp.getFilesByName('old cv to be deleted (title + file extension)');
     // delete old CVs in folder
     while (files.hasNext()) {
       files.next().setTrashed(true);
